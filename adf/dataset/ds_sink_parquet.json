@@ -1,0 +1,24 @@
+{
+	"name": "ds_sink_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_olist",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat('orders_', formatDateTime(utcnow(), 'yyyyMMdd'), '.parquet')",
+					"type": "Expression"
+				},
+				"folderPath": "olist/orders",
+				"fileSystem": "raw"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
