@@ -1,0 +1,15 @@
+{
+	"name": "adf-olist-dev-am",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "459c99cd-b374-4bde-8d12-29c3bd3a0704",
+		"tenantId": "e1d8e55b-5b61-4c05-b811-95de70e74900"
+	}
+}
