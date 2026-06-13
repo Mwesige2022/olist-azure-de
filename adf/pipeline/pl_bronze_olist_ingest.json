@@ -34,7 +34,7 @@
 				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "foreach_copy_tables",
 				"type": "ForEach",
 				"dependsOn": [
 					{
