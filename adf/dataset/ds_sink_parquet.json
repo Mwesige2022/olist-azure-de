@@ -11,10 +11,10 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@concat('orders_', formatDateTime(utcnow(), 'yyyyMMdd'), '.parquet')",
+					"value": "@concat('customers_', formatDateTime(utcnow(), 'yyyyMMdd'), '.parquet')",
 					"type": "Expression"
 				},
-				"folderPath": "olist/orders",
+				"folderPath": "olist/customers",
 				"fileSystem": "raw"
 			},
 			"compressionCodec": "snappy"
