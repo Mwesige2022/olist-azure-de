@@ -32,6 +32,26 @@
 					},
 					"firstRowOnly": false
 				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "lookup_pipeline_config",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('lookup_pipeline_config').output.value",
+						"type": "Expression"
+					},
+					"batchCount": 4
+				}
 			}
 		],
 		"annotations": []
